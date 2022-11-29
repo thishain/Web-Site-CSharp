@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PageMaster.master.cs" Inherits="Projeto_Diogenes.PageMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>World of Warcraft</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/Projeto.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <!-- Para inserir slides -->
+    <!-- Felxsldie: http://flexslider.woothemes.com/ -->
+    <link href="flexslide/flexslider.css" rel="stylesheet" />
+    <script src="flexslide/jquery.flexslider-min.js"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <!-- SOCIAL MEDIA FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- CABEÇALHO -->
+        <div class="cabecalho">
+            <!-- Logomarca -->
+            <div class="logomarca">
+                <a runat="server" href="~/Default.aspx">
+                    <asp:Image class="logo" ImageUrl="~/images/logoHeader.png" Height="70px" Width="70px" runat="server" />
+                </a>
+            </div>
+            <!-- Titulo -->
+            <div class="barra-titulo">
+                WOW MOGS
+            </div>
+            <!-- Menu -->
+            <div class="barra-menu">
+                <a runat="server" id="Home" href="~/Default.aspx">HOME</a>
+                <div class="dropdown">
+                    <span>MOGS</span>
+                    <div class="dropdown-content">
+                        <p>
+                            <img src="images/armor.png" style="width: 25px; height: 25px;" /><a runat="server" href="PlatePageM.aspx">Placas</a><img src="images/armor.png" style="width: 25px; height: 25px;" />
+                        </p>
+                        <p>
+                            <img src="images/leather.png" style="width: 25px; height: 25px;" /><a href="LeatherPage.aspx">Couro</a><img src="images/leather.png" style="width: 25px; height: 25px;" />
+                        </p>
+                        <p>
+                            <img src="images/cloth.png" style="width: 25px; height: 25px;" /><a href="ClothPage.aspx">Tecido</a><img src="images/cloth.png" style="width: 25px; height: 25px;" />
+                        </p>
+                         <p>
+                            <img src="images/malha.jpg" style="width: 25px; height: 25px;" /><a href="MailPage.aspx">Malha</a><img src="images/malha.jpg" style="width: 25px; height: 25px;" />
+                        </p>
+                    </div>
+                </div>
+                <a runat="server" id="FaleConosco" href="~/FaleConosco.aspx">CONTATO</a>
+                <a runat="server" id="MinhaConta" href="~/MinhaConta.aspx">MINHA CONTA</a>
+                <a runat="server" id="Entrar" visible="true" href="~/Login.aspx">ENTRAR</a>
+                <a runat="server" id="Sair" visible="false" href="~/Logout.aspx">SAIR</a>
+            </div>
+        </div>
+
+
+
+        <div class="conteudo content-wrap">
+            <!-- ContentPlaceHolder é onde estará o conteudo da pagina -->
+            <!-- Conteudo -->
+
+             
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+        <!-- Rodapé -->
+        <div class="rodape">
+            <div class="social-media-links">
+                <div class="textoRodape"> REDES SOCIAIS</div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

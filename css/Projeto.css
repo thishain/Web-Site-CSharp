@@ -1,0 +1,297 @@
+﻿/* PROJETO WEB - TURMA ADS 2022 TARDE */
+
+
+/* CABEÇALHO  */
+.cabecalho {
+    height: 80px;
+    /* permite que elementos tenham posições ABSOLUTAS dentro do cabeçalho */
+    position: relative;
+}
+
+    .cabecalho::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: url("../images/imgTop.png"); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.85;
+        border-bottom: groove 1px #fff;
+    }
+
+.logomarca {
+    position: absolute;
+    padding: 5px 5px;
+}
+
+.conteudo {
+    min-height: 800px;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+.rodape {
+    position: relative;
+    height: 120px;
+    font-family: 'Alfa Slab One', cursive;
+    border-top: groove 1px #fff;
+}
+
+    .rodape::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: url("../images/imgTop.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        mask-image: linear-gradient(0.10deg, rgba(0, 0, 0, 1) 95%, transparent 100%);
+    }
+
+.textoRodape {
+    text-align: center;
+    margin-top: -15px;
+    color: #e16323;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: #000000;
+    padding-bottom: 8px;
+    letter-spacing: 3px;
+}
+
+
+.social-media-links {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+    .social-media-links a {
+        font-size: 20px;
+    }
+
+
+.barra-titulo {
+    left: 3em;
+    top: 0.7em;
+    position: absolute;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 30px;
+    color: #e16323;
+    -webkit-text-fill-color: #e16323; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.barra-menu {
+    position: absolute;
+    top: 2em;
+    right: 10px;
+}
+
+    .barra-menu a {
+        color: #e16323;
+        letter-spacing: 2px;
+        margin: auto 10px;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 20px;
+        margin-left: 4px;
+        margin-right: 4px;
+        padding-bottom: 2px;
+        text-decoration: none;
+        -webkit-text-fill-color: #e16323; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1.25px;
+        -webkit-text-stroke-color: #000000;
+    }
+
+        .barra-menu a:hover {
+            color: white;
+            border-bottom: 3px solid black;
+
+        }
+
+/* DROPDOWN MENU */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    color: #e16323;
+    -webkit-text-fill-color: #e16323; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: #000000;
+}
+
+    .dropdown span:hover {
+        color: white;
+        padding-top: 2px;
+        border-top: 3px solid black;
+    }
+
+.dropdown-content {
+    font-size: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    min-width: 170px;
+    padding: 12px 16px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid black;
+
+}
+
+    .dropdown-content a {
+        font-size: 20px;
+        font-family: 'MedievalSharp', cursive;
+    }
+
+        .dropdown-content a:hover {
+            color: black;
+        }
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* DROPDOWN MENU */
+
+
+
+.flex-caption {
+    padding-bottom: 2%;
+    background: rgba(1,60,204,0.5);
+    color: #333333;
+    font-size: 16px;
+    font-family: 'M PLUS 1p';
+    margin: auto;
+    border-radius: 10px;
+}
+
+.slides li {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.slides li a {
+    text-decoration: none;
+}
+
+.slides li p {
+    padding: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.slides p:hover {
+    color: #e16323;
+    border: 2px solid #e16323;
+    font-weight: bold;
+}
+
+.separator {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    border-top: 3px solid #CCC;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.links-page {
+    margin: auto;
+    color: #fff;
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.links-page h3 {
+    padding-bottom: 15px;
+}
+
+    .links-page h3 a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .links-page h3 a:hover {
+        color: #e16323;
+        cursor: pointer;
+        padding-bottom: 15px;
+    }
+
+
+
+    .links-page img {
+        padding-right: 50px;
+        max-width: 50%;
+        padding: 0;
+    }
+
+
+/* CADASTRO */
+
+.cadastro {
+    
+}
+    .cadastro a:hover {
+        color: #e16323;
+        border-bottom: 1px solid #e16323;
+    }
+
+/* LOGIN */
+.login {
+  
+}
+
+.login a:hover {
+    color: #e16323;
+    border-bottom: 1px solid #e16323;
+}
+
+/* MINHA CONTA */
+
+.minhaconta {
+    color: #fff;
+}
+
+/* PAGINA DE CONTATO */
+
+.pageContato {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+

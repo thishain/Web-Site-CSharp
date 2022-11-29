@@ -1,0 +1,95 @@
+﻿
+.container {
+    min-height: 900px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 380px);
+    grid-gap: 2rem; /* espaço entre as imagens */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+   
+}
+
+
+.section img {
+    max-width: 170px;
+    height: 280px;
+    margin-top: 15px;
+
+}
+
+
+
+.section a {
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+
+
+
+.TextoTitulo h1 a {
+    text-decoration: none;
+    font-family: 'Alfa Slab One', cursive;
+    color: #e16323;
+    line-height: 1;
+    background: linear-gradient(0deg, #ff3e00, #e16323) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 2px;
+    letter-spacing: .1em;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: black;
+  
+}
+
+    .TextoTitulo h1 a:where(:hover, :focus-visible) {
+        background-size: 100% var(--bg-h);
+        background-position-x: left;
+        color: #fff;
+    }
+
+
+.container p {
+    border-radius: 5px;
+    border: solid;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.NomeSet {
+    color: #e16323;
+    font-family: 'Alfa Slab One', cursive;  
+}
+
+
+.NomeSet:hover {
+    color: #000000;
+}
+
+
+
+.descSet .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 2.2;
+}
+
+
+.section:hover .tooltiptext { 
+    visibility: visible;
+}
+
+
